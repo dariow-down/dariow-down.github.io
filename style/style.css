@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f9f9f9;
+    color: #535368;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.artwork {
+    height: auto;
+    max-height: 50vh;
+    max-width: 80vw;
+    margin-bottom: 4rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2f2e41;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #535368;
+        color: #cddcdd;
+    }
+
+    h1 {
+        color: #f9f9f9;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+
+
+
+.btn {
+    border: none;
+    border-radius: 25px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #222;
+    padding: 17px 40px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: #78c7d2;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.link {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.link a {
+    color: #000;
+    font-size: 25px;
+
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+
+.infos-btn {
+    margin: 5px;
+    padding-bottom: 10px;
+}
